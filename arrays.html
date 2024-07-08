@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    console.log("--------------------");
+    console.log("Arrays en Javascript");
+    console.log("--------------------");
+    console.log("1. Declarando un array con elementos en lines");
+    let miArray = [1, 2, 3];
+    console.log(miArray);
+
+    let miArray2 = new Array (1,2,3);
+    console.log(miArray);
+
+    let miArray3 = new Array (3);
+    miArray[0] = 1;
+    miArray[1] = 2;
+    miArray[2] = 3;
+    console.log(miArray3);
+
+    let miArray4 = [1, "dos", true, {nombre: "Juan", edad:30}];
+    console.log(miArray4);
+    console.log("-----------------------");
+    console.log("Acceder a la informacion del array")
+    console.log("-----------------------");
+
+    const letters = ["A", "B", "C"];
+    console.log(letters.length);
+    console.log(letters(2));
+    console.log(letters(5));
+
+    let miArray = [1, 2, 3];
+    miArray.push(4);
+    console.log(miArray);
+    
+    let miArray = [1, 2, 3];
+    miArray.pop();
+    console.log(miArray); 
+
+    let miArray = [1, 2, 3];
+    miArray.unshift(0);
+    console.log(miArray); 
+
+    let miArray = [1, 2, 3];
+    miArray.shift();
+    console.log(miArray); 
+
+    let miArray = [1, 2, 3];
+    let miOtroArray = [4, 5];
+    let nuevoArray = miArray.concat(miOtroArray);
+    console.log(miArray);
+    console.log(miOtroArray); 
+    console.log(minuevoArray);
+    
+    let miString ="hola, ¿como estas?";
+    let miArray = miString.split(" ");
+    console.log(miArray);
+
+    let miArray =["hola,", "¿como", "estas?"];
+let miString2 = miArray.join(" ");
+console.log(miString);
+
+var dias = ["lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domigo"];
+for(i=0;i<dias.lengt;i++)
+{
+    console.log(dias[i]);
+}
+
+var dias = ["lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domigo"];
+var i = 0;
+whiel(i<dias.lengt)
+{
+    console.log(dias[i]);
+    i++;
+}
+
+var dias = ["lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domigo"];
+for(let index in dias)
+{
+    console.log(dias[index]);
+}
+
+const matrix = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9],
+];
+
+var dias = ["lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domigo"];
+for(let i=0;i<matriz,length;i++)
+{
+    for(let j=0;matriz(i),length; j++)
+    {
+        console.log(matriz[i][j]);
+    }
+}
+
+let listaNumeros = '1,2,3,4,5'; 
+            let numeros = listaNumeros.split(',');
+            let suma = 0;
+            let mayor = Number(numeros[0]);
+            let menor = Number(numeros[0]);
+            let media;
+
+            for (let i = 0; i < numeros.length; i++) {
+            let numeroActual = Number(numeros[i]);
+            suma += numeroActual;
+            if (numeroActual > mayor) {
+                mayor = numeroActual;
+            }
+            if (numeroActual < menor) {
+                menor = numeroActual;
+            }
+            }
+
+            media = suma / numeros.length;
+
+            console.log('Suma: ' + suma);
+            console.log('Mayor: ' + mayor);
+            console.log('Menor: ' + menor);
+            console.log('Media: ' + media);
+    </script>
+</body>
+</html>
